@@ -313,7 +313,7 @@ td, th {
 		column-count: 3;
 	}
 	.flexy{
-		display: flex;
+		height: 1810px;
   }
 	.main-ending{
 		width: 32%;
