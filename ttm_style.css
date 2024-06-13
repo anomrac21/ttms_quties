@@ -1,0 +1,283 @@
+.hide{
+	display: none !important;
+}
+.main-header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-height: 4.3em;
+  background-color: var(--header-color);
+	z-index: 100;
+	border-bottom: 1px solid var(--header-bordercolor-1);
+}
+.main-header .container{
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main-header ul{
+	display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+.main-header ul::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main-header ul {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#menublock{
+	height: 4.3em;
+	list-style: none;
+}
+#menublock i{
+	font-size: 40px;
+  padding: 14px;
+}
+#menublock li {
+	border-right: 1px solid var(--header-bordercolor-2)
+}
+/*RATING*/
+.rateus{
+	width: fit-content;
+    margin: 0 auto;
+    font-size: x-large;
+}
+.star-rating {
+	white-space: nowrap;
+}
+.star-rating [type="radio"] {
+	appearance: none;
+}
+.star-rating i {
+	font-size: 1.2em;
+	transition: 0.3s;
+}
+
+.star-rating label:is(:hover, :has(~ :hover)) i {
+	transform: scale(1.35);
+	color: #fffdba;
+	animation: jump 0.5s calc(0.3s + (var(--i) - 1) * 0.15s) alternate infinite;
+}
+.star-rating label:has(~ :checked) i {
+	color: #faec1b;
+	text-shadow: 0 0 2px #ffffff, 0 0 10px #ffee58;
+}
+
+@keyframes jump {
+	0%,
+	50% {
+		transform: translatey(0) scale(1.35);
+	}
+	100% {
+		transform: translatey(-15%) scale(1.35);
+	}
+}
+
+/*FOOTER STYLES*/
+#footer{
+	position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+  z-index: 100;
+  display: inline-block;
+  transition: 0.5s;	
+}
+#footerBtns{
+	transition: 0.5s;	
+	width: 100%;
+	padding:5px 5px 10px;
+}
+.grad1{
+	background-image: linear-gradient(#00000055, #000000aa, #000);
+}
+.grad2{
+	background-image: linear-gradient(transparent, #00000055, #000);
+}
+#footerBtns div{
+	margin:0 auto;
+	width: fit-content;
+	
+}
+#footer a{
+	color:#ffffff;
+}
+.smallfont{
+  font-size: small;
+}
+.largefont{
+  font-size: large;
+}
+.bigfont{
+  font-size: xx-large;
+}
+
+/*END FOOTER STYLES*/
+
+
+#btn_SubInfo {
+	padding:4px 15px;
+}
+#btn_SubInfo .fa-bell{
+	position:relative;
+	padding: 15px 8px;
+}
+#btn_SubInfo .fa-gear{
+	position: absolute;
+  top: 4px;
+  right: -4px;
+  font-size: 13px;
+}
+.subSettings{
+	display: flex;
+  margin: 0 auto;
+  width: max-content;
+}
+.onesignal-customlink-container{
+	min-height: fit-content !important;
+}
+.onesignal-customlink-container button{
+	font-family:initial !important;
+	font-size: 20px !important;
+	padding: 15px 5px !important;
+}
+/*APPLE ONLY STYLES*/
+#appleMessage{
+	position: fixed;
+  background-color: #000000aa;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+  top: 69px;
+  left: 0;
+  z-index: 1000;
+  color: #000;
+	display: none;
+}
+.appleInstallHide{
+	display:none !important;
+}
+#appleMessage .container{
+  margin: 10px;
+  background: linear-gradient(#fff, #ffffffaa);
+  position: relative;
+  border-radius: 15px;
+}
+#appleMessage .card{
+	background: url(images/apple/bg1.webp);
+  padding: 0 15px 15px;
+  position: relative;
+  border-radius: 15px;
+}
+#appleMessage .header{
+	display: flex;
+  position: relative;
+}
+#appleMessage #slides{
+	display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+#appleMessage .text{
+	padding: 10px;
+  width: -webkit-fill-available;
+  text-align: center;
+}
+#appleMessage .msg .msgtxt{
+	display: flex;
+   
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0px;
+}
+#appleMessage .msg p{
+    padding: 5px 0;
+     text-align: center;
+}
+#appleMessage .appleMsgBtns{
+	padding: 0;
+  position: absolute;
+  margin: 0;
+  color: #000;
+}
+#appleMessage .appleMsgBtnClose{
+	right: 0;
+}
+#appleMessage .appleMsgBtnRight{
+	right: 0;
+	top: 50%;
+}
+#appleMessage .appleMsgBtnLeft{
+	left: 0;
+	top: 50%;
+}
+#appleMessage .appleMsgBtns .fa{
+  font-size: xx-large;
+}
+#appleMessage .apple_tutorial_img{
+	height: 65vh;
+  width: auto;
+  max-width: 100%;
+  margin: 10px auto;
+  display: block;
+  border-radius: 15px;
+}
+#appleMessage .icon{
+	height: 24px;
+  width: 24px;
+  padding:0 5px ;
+}
+#appleMessage .fa-warning{
+	color: #fe2;
+	text-shadow: 0 0 1px #000;
+}
+
+@supports (-webkit-touch-callout: none) { /* CSS specific to iOS devices */
+/* CSS specific to iOS devices */
+ #appleMessage {
+ 		display: initial !important;
+ }
+}
+
+/*Footer AD FRAMEWORK*/
+#footer #adSpot1,
+#footer #adSpot2{
+    background-image: linear-gradient(#000,#000000aa);
+    display: flex;
+    max-width: 100%;
+    overflow: scroll;
+    transition: opacity 0.5s;
+}
+#footer #adSpot1 i,
+#footer #adSpot2 i{
+    position: fixed;
+    padding: 5px;
+}
+#footer #accessibility a{
+	background: #000000ee;
+	display: inline-block;
+	padding: 15px;
+	margin: 5px 0;
+
+}
+#footer #accessibility i{
+	padding: 0 0 0 5px;
+}
+#footer #adSpot1 img,
+#footer #adSpot2 img{
+	max-width: max-content;
+	width: 100vw;
+}
+@media (min-width:961px) { 
+	/* big landscape tablets, laptops, and desktops */
+	#footer #adSpot1, #footer #adSpot2 {
+    display: list-item;
+    overflow: initial;
+	}
+}

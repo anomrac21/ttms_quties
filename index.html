@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+		<!-- WEBSITE META TAGS -->
+		<title>Quties</title>
+		<meta property="og:title" content="Quties"/>
+		<meta name="apple-mobile-web-app-title" content="Quties">
+
+		<!--APPLE SUPPORT-->
+		<meta name="description" content="Quties Digital Menu"/>
+		<meta property="og:description" content="Quties Digital Menu"/>
+		
+		<!-- WEBSITE LINK AND IMAGE -->
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="/images/favicon152.webp"/>
+
+		<!-- APP THEME COLOR -->
+		<meta name="theme-color" content="#000000"/>
+
+		<!-- MAIN APP STYLE -->
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="ttm_style.css"/>
+
+		<!-- MANIFEST -->
+		<link rel="manifest" href="manifest.json" />
+
+		<!--APPLE SUPPORT & ALL ICONS-->
+		<link rel="apple-touch-icon" href="/images/favicon192.webp" />
+		<link rel="shortcut icon" sizes="16x16" href="/images/favicon16.webp">
+		<link rel="shortcut icon" sizes="196x196" href="/images/favicon196.webp">
+		<link rel="apple-touch-icon" href="/images/favicon192.webp" />
+		<link rel="shorcut icon" href="/images/favicon512.webp"/>
+        <link rel="apple-touch-icon-precomposed" href="/images/favicon152.webp">
+
+		<!--ANIMATE ON SCROLL ANIMATIONS-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- FONTS FOR THE MENU -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+		<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+		<script>
+		  window.OneSignalDeferred = window.OneSignalDeferred || [];
+		  OneSignalDeferred.push(function(OneSignal) {
+		    OneSignal.init({
+		      appId: "dad4930f-3b25-4e2a-8aa5-e2fc97fa7430",
+		    });
+		  });
+		</script>
+
+	</head>
+
+	<body>
+		<!-- ALL AUDIO FILES -->
+		<audio id="click"><source src="sound/click.mp3"></audio>
+		<audio id="rate"><source src="sound/analog.mp3"></audio>
+		<!-- END ALL AUDIO FILES -->
+
+		<!-- HEADER -->
+		<div class="main-header">
+			<div class="container">
+
+				<!-- MENU LOGO -->
+				<a href="#" onclick="playClick();" id="logo">
+					<img class="logo center" src="images/favicon192.webp" ></a>
+				<!-- END MENU LOGO -->
+
+				<!-- MENU ICONS FOR THE MENU SECTIONS -->
+				<ul id="menublock">
+					<li>
+						<a href="#platters" onclick="playClick();"><img class="icon center" src="images/icon-trailblazers.webp"></a>
+					</li>
+					<li>
+						<a href="#buildyourplatter" onclick="playClick();"><img class="icon center" src="images/icon-platter.webp"></a>
+					</li>
+					<li>
+						<a href="#sides" onclick="playClick();"><img class="icon center" src="images/icon-sides.webp"></a>
+					</li>
+					<li>
+						<a href="#salad" onclick="playClick();"><img class="icon center" src="images/icon-salads.webp"></a>
+					</li>
+					<li>
+						<a href="#desserts" onclick="playClick();"><img class="icon center" src="images/icon-dessert.webp"></a>
+					</li>
+					<li>
+						<a href="#beers" onclick="playClick();"><img class="icon center" src="images/icon-beer.webp"></a>
+					</li>
+					<li>
+						<a href="#angostura" onclick="playClick();"><img class="icon center" src="images/icon-rum.webp"></a>
+					</li>
+					<li>
+						<a href="#eldorado" onclick="playClick();"><img class="icon center" src="images/icon-eldorado.webp"></a>
+					</li>
+					<li>
+						<a href="#scotch" onclick="playClick();"><img class="icon center" src="images/icon-scotch.webp"></a>
+					</li>
+					<li>
+						<a href="#whiskey" onclick="playClick();"><img class="icon center" src="images/icon-whiskey.webp"></a>
+					</li>
+					
+					<li>
+						<a href="#signatureshots" onclick="playClick();"><img class="icon center" src="images/icon-shots.webp"></a>
+					</li>
+
+					<li>
+						<a href="#cocktails" onclick="playClick();"><img class="icon center" src="images/icon-cocktails.webp"></a>
+					</li>
+					<li>
+						<a href="#signaturecocktails" onclick="playClick();"><img class="icon center" src="images/icon-sigcocktails.webp"></a>
+					</li>
+					
+				</ul>
+				<!-- END MENU ICONS FOR THE MENU SECTIONS -->
+
+			</div><!-- END HEADER CONTAINER-->
+		</div><!-- END HEADER -->
+
+		<div class="main">
+
+			<!-- HERO SECTION -->
+			<div class="main-hero" id="home">
+
+				<!-- HERO IMAGE -->
+				<div class="heroimg"><img src="images/favicon512.webp" data-aos="zoom-out" alt="bg"></div>
+
+				<!-- HERO CONTECTINFO -->
+				<div class="contactinfo">
+					<ul>
+						<li data-aos="zoom-in" data-aos-anchor="#home">
+							<a href="https://maps.app.goo.gl/5nTdEAmxZEpU7tay9" target="_blank" onclick="playContact();" ><i class="fa fa-map-marker"></i>Piarco Plaza</a>
+							<a href="tel:1-868-788-4370" onclick="playContact();" ><i class="fa fa-phone"></i>Quties-0</a>
+							
+						</li>
+						<li data-aos="zoom-in" data-aos-anchor="#home">
+							<a href="https://maps.app.goo.gl/W4JQckiijoycPhzY9" target="_blank" onclick="playContact();" ><i class="fa fa-map-marker"></i>Heartland Plaza</a>
+							<a href="tel:1-868-788-4371" onclick="playContact();" ><i class="fa fa-phone"></i>Quties-1</a>
+						</li>
+						<!-- APP FUNCTIONALITY BUTTON -->
+						<li data-aos="zoom-in" data-aos-anchor="#home"id="SubInfoBtn" >
+							<a id="btn_SubInfo" onclick="expandAppMenu();">
+								<div class="subSettings">
+									<i class="fa fa-bell"><i class="fa fa-gear"></i></i> <div class='onesignal-customlink-container'></div>
+							  	</div>
+							</a>
+						</li>
+					</ul>
+					<div id="SubBtnItems" class="hide">
+						<div id="appleMessage" class="appleInstallHide">
+							<div class="container">
+								<div class="card">
+									<div class="header">
+										<b class="text"><i class="fa fa-warning"></i> <i class="fa fa-apple"></i> Apple iOS users <i class="fa fa-warning"></i></b>
+										<a class="appleMsgBtns appleMsgBtnClose" onclick="expandAppMenu();"><i class="fa fa-close"></i></a>
+									</div>
+									<div id="slides">
+										<div class="msg msg_1">
+											<div class="msgtxt msg_1_text"><p>1. Open Menu</p><img class="icon center" src="images/box-arrow-up_ios.webp"></div>
+											<p>Located at the bottom of the screen.</p>
+											<a class="appleMsgBtns appleMsgBtnRight" onclick="showAppleMsg(1);"><i class="fa fa-arrow-right"></i></a>
+											<img class="center apple_tutorial_img" src="images/apple/1.webp">
+										</div>
+										<div class="msg msg_2 hide">
+											<div class="msgtxt msg_1_text"><p>2. Add to Home Screen</p></div>
+											<p>Select add to home screen from menu</p>
+											<a class="appleMsgBtns appleMsgBtnLeft" onclick="showAppleMsg(0);"><i class="fa fa-arrow-left"></i></a>
+											<a class="appleMsgBtns appleMsgBtnRight" onclick="showAppleMsg(2);"><i class="fa fa-arrow-right"></i></a>
+											<img class="center apple_tutorial_img" src="images/apple/2.webp">
+										</div>
+										<div class="msg msg_3 hide">
+											<div class="msgtxt msg_1_text"><p>2. Add to Home Screen</p></div>
+											<p>Confirm and Add</p>
+											<a class="appleMsgBtns appleMsgBtnLeft"  onclick="showAppleMsg(1);"><i class="fa fa-arrow-left"></i></a>
+											<a class="appleMsgBtns appleMsgBtnRight"  onclick="showAppleMsg(3);"><i class="fa fa-arrow-right"></i></a>
+											<img class="center apple_tutorial_img" src="images/apple/3.webp">
+										</div>
+										<div class="msg msg_4 hide">
+											<div class="msgtxt msg_1_text"><p>3. Open App on Home Screen</p></div>
+											<p>Select app from home screen</p>
+											<a class="appleMsgBtns appleMsgBtnLeft"  onclick="showAppleMsg(2);"><i class="fa fa-arrow-left"></i></a>
+											<a class="appleMsgBtns appleMsgBtnRight"  onclick="showAppleMsg(4);"><i class="fa fa-arrow-right"></i></a>
+											<img class="center apple_tutorial_img" src="images/apple/4.webp">
+										</div>
+										<div class="msg msg_4 hide">
+											<div class="msgtxt msg_1_text"><p>4. Subcribe to Notifications</p></div>
+											<p>Enjoy Updates from Tiny Tavern</p>
+											<a class="appleMsgBtns appleMsgBtnLeft"  onclick="showAppleMsg(3);"><i class="fa fa-arrow-left"></i></a>
+											<img class="center apple_tutorial_img" src="images/apple/5.webp">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- End Hidden Apple Message -->
+				</div><!-- END CONTACT SECTION -->	
+			</div>
+			<!-- END HERO SECTION -->
+
+	<div class="main-body">
+		<div class="main-menu" >
+			<a name="anchor" id="platters"></a>
+			<br><br><br><br>
+			<img class="food" src="images/food1.webp" data-aos="zoom-out"data-aos-anchor="#platters" >
+			<h1 class="center title">Off The Platter</h1>
+			<table class="menu">
+				<tr>
+					<td>Crab Back</td><th>$55</th>
+				</tr>
+				<tr>
+					<td>Clam Chowder Soup</td><th>$55</th>
+				</tr>
+				<tr>
+					<td>Quties 5oz Bacon Ceese Burger with Fries<br>
+					<i>Lettuce, Tomatoes, Onions, Pineapple & Pickles</i></td><th>$80</th>
+				</tr>
+				<tr>
+					<td>Veggie Burger with Fries<br>
+					<i>Cheese, Lettuce, Tomatoes, Onions, Pineapple & Pickles</i></td><th>$70</th>
+				</tr>
+				<tr>
+					<td>1/4 BBQ Chicken Leg & Thigh with 1 Side</td><th>$65</th>
+				</tr>
+				<tr>
+					<td>Fried/Grilled Chicken Breast Strips with 1 Side</td><th>$65</th>
+				</tr>
+				<tr>
+					<td>Garlic & Herb Pork Chop with 1 Side</td><th>$75</th>
+				</tr>
+				<tr>
+					<td>BBQ Baby Back Pork Ribs with 1 Side</td><th>$135</th>
+				</tr>
+				<tr>
+					<td>Grilled Lamb Shoulder Chop with Pepper Jeklly & 1 Side</td><th>$90</th>
+				</tr>
+				<tr>
+					<td>Garlic Shrimp with 1 Side</td><th>$90</th>
+				</tr>
+				<tr>
+					<td>Catch of the Day with 1 Side</td><th>$90</th>
+				</tr>
+				<tr>
+					<td>Chicken Alfredo Fettuccine</td><th>$100</th>
+				</tr>
+				<tr>
+					<td>Shrimp Alfredo Fettuccine</td><th>$120</th>
+				</tr>
+				<tr>
+					<td>8oz Strip Loin Steak with 2 Sides</td><th>$175</th>
+				</tr>
+				<tr>
+					<td>8oz Strip Ribeye Steak with 2 Sides</td><th>$250</th>
+				</tr>
+
+			</table>
+			</div><!--End Main Menu-->
+
+			<div class="main-menu" >
+			<a name="anchor" id="buildyourplatter"></a>
+			<br><br><br><br>
+			<img class="food" src="images/food2.webp" data-aos="zoom-out" data-aos-anchor="#buildyourplatter">
+			<h1 class="center title">Build Your Platter</h1>
+			<h3 class=" menutitle">(4 Choices per Platter)
+	            </h3>
+			<table class="menu">
+				<tr>
+					<th class="menusize">Platter Portions</th><th>(4)</th><th>(8)</th>
+				</tr>
+				<tr>
+					<td>Fried Pot Stickers<br>
+					<i>Chicken/Pork</i></td><th>$40</th><th>$75</th>
+				</tr>
+				<tr>
+					<td>Vegetable Spring Rolls</td><th>$40</th><th>$75</th>
+				</tr>
+				<tr>
+					<td>Wontons<br>
+					<i>Chicken/Shrimp</i></td><th>$20</th><th>$36</th>
+				</tr>
+				<tr>
+					<td>Samosas<br>
+					<i>Veggie/Fish</i></td><th>$50</th><th>$95</th>
+				</tr>
+				<tr>
+					<td>Wings<br>
+					<i>BBQ/Buffalo/Fried</i></td><th>$50</th><th>$95</th>
+				</tr>
+				<tr>
+					<td>Chicken Tenders</td><th>$45</th><th>$85</th>
+				</tr>
+				<tr>
+					<td>Pepper Shrimp</td><th>$45</th><th>$85</th>
+				</tr>
+				<tr>
+					<td>BBQ Beef Riblets</td><th>$50</th><th>$95</th>
+				</tr>
+
+				</table>
+
+				<table class="menu">
+				<tr>
+					<th class="menusize">Portions</th><th>1/2</th><th>Full</th>
+				</tr>
+				<tr>
+					<td>Shark Bites</td><th>$50</th><th>$95</th>
+				</tr>
+				<tr>
+					<td>Juicy Jerk Pork Bits</td><th>$45</th><th>$85</th>
+				</tr>
+				<tr>
+					<td>Fried Calamari</td><th>$50</th><th>$95</th>
+				</tr>
+				<tr>
+					<td>Quties Garlic Lobster Chunks</td><th>$150</th><th>$275</th>
+				</tr>
+				<tr>
+					<td colspan="3">(Seasonal & Price Subjected to Change)</td>
+				</tr>
+			</table>
+
+
+			</div><!--End Main Menu-->
+			<div class="main-menu" >
+				<a name="anchor" id="sides"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food3.webp" data-aos="zoom-out" data-aos-anchor="#sides">
+			<h1 class="center title">Sides</h1>
+			<br>
+			<table class="menu">
+				<tr>
+					<td>Fries</td><th>$25</th>
+				</tr>
+				<tr>
+					<td>Sweet Potato Fries</td><th>$35</th>
+				</tr>
+				<tr>
+					<td>Seasoned Wedges</td><th>$30</th>
+				</tr>
+				<tr>
+					<td>Cassava Wedges</td><th>$40</th>
+				</tr>
+				<tr>
+					<td>Onion Rings</td><th>$35</th>
+				</tr>
+				<tr>
+					<td>Corn on the Cob</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Sauteed Vegetables</td><th>$30</th>
+				</tr>
+				<tr>
+					<td>Mashed Potato</td><th>$35</th>
+				</tr>
+				<tr>
+					<td>Macaroni Salad</td><th>$25</th>
+				</tr>
+			</table>
+			</div><!--End Main Menu-->
+
+			<div class="main-menu" >
+			<a name="anchor" id="salad"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food4.webp" data-aos="zoom-out" data-aos-anchor="#salad">
+			<h1 class="center title">Salad</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<td>Fresh Salad</td><th>$65</th>
+				</tr>
+				<tr>
+					<td>Chicken Salad</td><th>$80</th>
+				</tr>
+				<tr>
+					<td>Shrimp Salad</td><th>$95</th>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+
+			<div class="main-menu" >
+			<a name="anchor" id="desserts"></a>
+			<br><br><br><br>
+			<img class="food" src="images/food5.webp" data-aos="zoom-out" data-aos-anchor="#desserts">
+			<h1 class="center title">Desserts</h1>
+			<br>
+			<table class="menu">
+				<tr>
+					<td>Strawberry Cheesecke Cup</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Chocolate Eruption Cup</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Tiramisu Cup</td><th>$50</th>
+				</tr>
+			</table>
+			
+
+			</div><!--End Main Menu-->
+
+		</div><!--End Main Menu-->
+		<div class="main-body flexy">
+			<div class="main-menu" >
+			<a name="anchor" id="beers"></a>
+			<br><br><br><br>
+			<img class="food" src="images/food6.webp" data-aos="zoom-out" data-aos-anchor="#beers">
+			<h1 class="center title">Beers</h1>
+			<br>
+			<table class="menu">
+				<tr>
+					<td>Pilsner</td><th>$15</th>
+				</tr>
+				<tr>
+					<td>Carib</td><th>$15</th>
+				</tr>
+				<tr>
+					<td>Stag</td><th>$15</th>
+				</tr>
+				<tr>
+					<td>Carib Blue</td><th>$18</th>
+				</tr>
+				<tr>
+					<td>Heineken</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Heineken 0.0</td><th>$15</th>
+				</tr>
+				<tr>
+					<td>Heineken Light</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Corona</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Coors Light</td><th>$15</th>
+				</tr>
+			</table>
+
+			<table class="menu">
+				<tr>
+					<td>Guinness</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Mackeson</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Mackeson Dark Chocolate</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Smirnoff Apple</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Smirnoff Black</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Caribe Rose</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Caribe Brut</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Caribe Mimosa</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Caribe Pearsecco</td><th>$20</th>
+				</tr>
+			</table>
+
+			<table class="menu">
+				<tr>
+					<td>Red Bull</td><th>$25</th>
+				</tr>
+				<tr>
+					<td>Magnum</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Rude Boy Original</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Rude Boy Passion Mango</td><th>$20</th>
+				</tr>
+				<tr>
+					<td>Rude Boy Xtreme</td><th>$23</th>
+				</tr>
+			</table>
+			</div><!--End Main Menu-->
+			<div class="main-menu" >
+
+			<a name="anchor" id="angostura"></a>
+			<br><br><br><br>
+			<img class="food" src="images/food7.webp" data-aos="zoom-out" data-aos-anchor="#angostura">
+			<h1 class="center title">Angostura</h1>
+			<br>
+			<table class="menu">
+				<tr>
+					<th class="menusize"></th><th>Drink</th><th>Bottle</th>
+				</tr>
+				<tr>
+					<td>White Oak</td><th>$16</th><th>$250</th>
+				</tr>
+				<tr>
+					<td>Black Label</td><th>$16</th><th>$250</th>
+				</tr>
+				<tr>
+					<td>Puncheon</td><th>$25</th><th>$300</th>
+				</tr>
+				<tr>
+					<td>Tamboo</td><th>$20</th><th>$300</th>
+				</tr>
+				<tr>
+					<td>7 Years</td><th>$25</th><th>$525</th>
+				</tr>
+				<tr>
+					<td>1919</td><th>$35</th><th>$600</th>
+				</tr>
+				<tr>
+					<td>1824</td><th>$40</th><th>$750</th>
+				</tr>
+				<tr>
+					<td>1787</td><th>$45</th><th>$800</th>
+				</tr>
+				<tr>
+					<td>Single Barrel</td><th>$30</th><th>$450</th>
+				</tr>
+			</table>
+			 
+			</div><!--End Main Menu-->
+            
+			<div class="main-menu" >
+			<a name="anchor" id="eldorado"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food8.webp" data-aos="zoom-out" data-aos-anchor="#eldorado">
+			<h1 class="center title">El Dorado</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<th class="menusize"></th><th>Drink</th><th>Bottle</th>
+				</tr>
+				<tr>
+					<td>12 Years</td><th>$35</th><th>$550</th>
+				</tr>
+				<tr>
+					<td>15 Years</td><th>$45</th><th>$675</th>
+				</tr>
+				<tr>
+					<td>Ron Zacapa (23 Years)</td><th>$65</th><th>$800</th>
+				</tr>
+				<tr>
+					<td>Malibu</td><th>$30</th><th>$450</th>
+				</tr>
+				<tr>
+					<td>Campari</td><th>$25</th><th>$300</th>
+				</tr>
+				<tr>
+					<td>Punchy Punch Companion</td><th></th><th>$20</th>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+
+		
+
+			<div class="main-menu" >
+			<a name="anchor" id="scotch"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food9.webp" data-aos="zoom-out" data-aos-anchor="#scotch">
+			<h1 class="center title">Scotch</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<th class="menusize"></th><th>Drink</th><th>Bottle</th>
+				</tr>
+				<tr>
+					<td>Johnnie Walker</td><th>$45</th><th>$650</th>
+				</tr>
+				<tr>
+					<td>Black & White</td><th>$30</th><th>$450</th>
+				</tr>
+				<tr>
+					<td>12 Years Dewars</td><th>$35</th><th>$500</th>
+				</tr>
+				<tr>
+					<td>15 Years Dewars</td><th>$45</th><th>$600</th>
+				</tr>
+				<tr>
+					<td>18 Years Dewars</td><th>$60</th><th>$800</th>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+
+			<div class="main-menu" >
+			<a name="anchor" id="whiskey"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food10.webp" data-aos="zoom-out" data-aos-anchor="#whiskey">
+			<h1 class="center title">Whiskey</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<th class="menusize"></th><th>Drink</th><th>Bottle</th>
+				</tr>
+				<tr>
+					<td>Jack Daniel's</td><th>$45</th><th>$560</th>
+				</tr>
+				<tr>
+					<td>Jack Daniel's Honey</td><th>$50</th><th>$600</th>
+				</tr>
+				<tr>
+					<td>Jack Daniel's Apple</td><th>$50</th><th>$600</th>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+
+
+			<div class="main-menu" >
+			<a name="anchor" id="signatureshots"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food11.webp" data-aos="zoom-out" data-aos-anchor="#signatureshots">
+			<h1 class="center title">Signature Shots</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<td>Peach Haven</td><th>$45</th>
+				</tr>
+				<tr>
+					<td colspan="2">Puncheon, Peach Puree, Peach Schnapps</td>
+				</tr>
+				<tr>
+					<td>Mali-Blu</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Malibu, Blue Curacao, Pineapple Juice, Vodka</td>
+				</tr>
+				<tr>
+					<td>B 60</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Mokatika Baileys, Puncheon</td>
+				</tr>
+				<tr>
+					<td>Dragon Fire</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Jack Daniek;s Honey, Cinnamon, Puncheon</td>
+				</tr>
+				<tr>
+					<td>Slippery Nipple</td><th>$45</th>
+				</tr>
+				<tr>
+					<td colspan="2">Banana Liquor, Baileys, Vodka</td>
+				</tr>
+				<tr>
+					<td>FCUK</td><th>$45</th>
+				</tr>
+				<tr>
+					<td colspan="2">Apple Vodka, Melon Liquor, Pineapple Juice</td>
+				</tr>
+				<tr>
+					<td>Bite Me</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Jack Daniels Honey, Vodka, Baileys</td>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+
+		
+
+			<div class="main-menu" >
+			<a name="anchor" id="cocktails"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food12.webp" data-aos="zoom-out" data-aos-anchor="#cocktails">
+			<h1 class="center title">Cocktails</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<td>Margaritas (Virgin)</td><th>$35</th>
+				</tr>
+				<tr>
+					<td>Margaritas (Alcohol)</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Daiquiris (Virgin)</td><th>$35</th>
+				</tr>
+				<tr>
+					<td>Daiquiris (Alcohol)</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Martini</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Sea Breeze</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Brown Cow</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Brandy Alexander</td><th>$60</th>
+				</tr>
+				<tr>
+					<td>Long Island Ice Tea</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Mojito</td><th>$50</th>
+				</tr>
+				<tr>
+					<td>Tequila Sunrise</td><th>$45</th>
+				</tr>
+				<tr>
+					<td>Pina Colada</td><th>$65</th>
+				</tr>
+				<tr>
+					<td>Blue Hawaiian Pina Colada</td><th>$70</th>
+				</tr>
+				<tr>
+					<td>Rum Punch</td><th>$50</th>
+				</tr>
+				<tr>
+					<td>Cosmopolitan</td><th>$50</th>
+				</tr>
+				<tr>
+					<td>Ameretto Sour</td><th>$50</th>
+				</tr>
+				<tr>
+					<td>Coronarita</td><th>$65</th>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+
+			<div class="main-menu" >
+			<a name="anchor" id="signaturecocktails"></a>
+			<br><br><br><br>
+
+
+			<img class="food" src="images/food13.webp" data-aos="zoom-out" data-aos-anchor="#signaturecocktails">
+			<h1 class="center title">Signature Cocktails</h1>
+			<br>
+			
+			<table class="menu">
+				<tr>
+					<td>Cocolicious</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Rum, Mokatika, Creme De Cacao Rum Cream and Chocolate Ice Cream</td>
+				</tr>
+				<tr>
+					<td>Deep Throat</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Rum, Lime, Banana Puree Liqueur and Rum Cream</td>
+				</tr>
+				<tr>
+					<td>Minty Cyat</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Vodka, Creme De Menthe, Cacao, Cream</td>
+				</tr>
+				<tr>
+					<td>Clitorini</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Vodka, Elderflower, Cranberry Juice, Lime, Bitters</td>
+				</tr>
+				<tr>
+					<td>Leg Opener</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Tequila, Passion Fruit Nectar, Lime</td>
+				</tr>
+				<tr>
+					<td>Hard Dick</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Whiskey, Sweet Vermouth, Blackberry Liqueur, Bitters</td>
+				</tr>
+				<tr>
+					<td>Dirty Mudslide</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Vodka, Rum Cream, Pepper Sauce, Ice Cream, Milk and Bitters</td>
+				</tr>
+				<tr>
+					<td>Cucumber Melonrita</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Melon Liqueur, Triple Sec, Rum, Lime and Cucumber</td>
+				</tr>
+				<tr>
+					<td>Wet Drawers</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Rum, Melon Liqueur, Malibu, Pineapple Juice</td>
+				</tr>
+				<tr>
+					<td>Mai... Tie Me Up</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Rum, Amarett, Pineapple, Banana Juice, Grenadine</td>
+				</tr>
+				<tr>
+					<td>Butterfly Kisses</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Vanilla Vodka, Creme De Cacao, Milk</td>
+				</tr>
+				<tr>
+					<td>Pull Aside and Park</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Vodka, Lime, Blue Curacao</td>
+				</tr>
+				<tr>
+					<td>Slippery When Wet</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Gin, Lime, Blackberry Liqueur</td>
+				</tr>
+				<tr>
+					<td>Back Shot</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Whiskey, Lime Syrup</td>
+				</tr>
+				<tr>
+					<td>Slow and Steady</td><th>$50</th>
+				</tr>
+				<tr>
+					<td colspan="2">Tequila, Pineapple Juice, Lime and Peach Syrup</td>
+				</tr>
+				<tr>
+					<td>Virginity</td><th>$35</th>
+				</tr>
+				<tr>
+					<td colspan="2">Non Alcohol, Coconut Cream Pineapple Juice</td>
+				</tr>
+				<tr>
+					<td>Innocence</td><th>$35</th>
+				</tr>
+				<tr>
+					<td colspan="2">Non Alcohol, Chocolate Syrup, Vanilla Ice Cream</td>
+				</tr>
+				<tr>
+					<td>Pum Pum Grabba</td><th>$70</th>
+				</tr>
+				<tr>
+					<td colspan="2">Melon Liqueuer, Peach Liqueuer, Sprite & Coconut Rum</td>
+				</tr>
+			</table>
+
+			</div><!--End Main Menu-->
+			
+	</div><!--End Main div 2-->
+
+		<div class="main-rating">
+			<div class="headerstyle" data-aos="zoom-out"><h1 class="center title_color">Rate Us<br><br></h1></div>
+			<p class="rateus"> 
+				<span class="star-rating">
+				<label for="rate-1" style="--i:1"><i class="fa fa-star" onclick="playRateLow();"></i></label>
+				<input type="radio" name="rating" id="rate-1" value="1">
+				<label for="rate-2" style="--i:2"><i class="fa fa-star" onclick="playRateLow();"></i></label>
+				<input type="radio" name="rating" id="rate-2" value="2" checked>
+				<label for="rate-3" style="--i:3"><i class="fa fa-star" onclick="playRateLow()" ></i></a></label>
+				<input type="radio" name="rating" id="rate-3" value="3">
+				<label for="rate-4" style="--i:4"><i class="fa fa-star" onclick="playRateHigh();"></i></label>
+				<input type="radio" name="rating" id="rate-4" value="4">
+				<label for="rate-5" style="--i:5"><i class="fa fa-star" onclick="playRateHigh();"></i></label>
+				<input type="radio" name="rating" id="rate-5" value="5">
+				</span>
+			</p>
+			<br>
+			<div class="main-ending">
+				<div>
+					<img data-aos="zoom-out" class="center" src="images/favicon512.webp" alt="ball" width="100%">
+				</div>
+			</div>
+			
+		</div>
+
+		
+		<div class="main-footer">
+			<h3 class="center opening">OPENING</h3>
+			<div class="openinghours">
+				<h3 class="center">Everday: 11am</h3>
+			</div>
+			<div class="contactinfo">
+				<ul>
+					<li data-aos="zoom-in" data-aos-anchor="#home">
+							<a href="https://maps.app.goo.gl/5nTdEAmxZEpU7tay9" target="_blank" onclick="playContact();" ><i class="fa fa-map-marker"></i>Piarco Plaza</a>
+							<a href="tel:1-868-788-4370" onclick="playContact();" ><i class="fa fa-phone"></i>Quties-0</a>
+							
+						</li>
+						<li data-aos="zoom-in" data-aos-anchor="#home">
+							<a href="https://maps.app.goo.gl/W4JQckiijoycPhzY9" target="_blank" onclick="playContact();" ><i class="fa fa-map-marker"></i>Heartland Plaza</a>
+							<a href="tel:1-868-788-4371" onclick="playContact();" ><i class="fa fa-phone"></i>Quties-1</a>
+					</li>
+					<!-- APP FUNCTIONALITY BUTTON -->
+					<li data-aos="zoom-in" data-aos-anchor="#home"id="SubInfoBtn" >
+						<a id="btn_SubInfo" onclick="expandAppMenu();">
+							<div class="subSettings">
+								<i class="fa fa-bell"><i class="fa fa-gear"></i></i> <div class='onesignal-customlink-container'></div>
+						  	</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+
+		<!-- FOOTER SECTION -->
+		<div id="footer" >
+
+			<div id="adSpot1" class="hide">
+				<i class="fa fa-film"></i>
+				<a onclick="playClick();"><img class="" src="images/ads/1.webp"></a>
+				<a onclick="playClick();"><img class="" src="images/ads/2.webp"></a>
+				<a onclick="playClick();"><img class="" src="images/ads/3.webp"></a>
+				<a onclick="playClick();"><img class="" src="images/ads/4.webp"></a>
+			</div>
+
+			<div id="adSpot2" class="hide">
+				<i class="fa fa-cab"></i>
+				<a onclick="playClick();"><img class="" src="images/ads/5.webp"></a>
+				<a onclick="playClick();"><img class="" src="images/ads/6.webp"></a>
+				<a onclick="playClick();"><img class="" src="images/ads/7.webp"></a>
+				<a onclick="playClick();"><img class="" src="images/ads/8.webp"></a>
+			</div>
+
+			<div id="accessibility" class="hide">
+				<a id="btn_install1" class="hide" onclick="playContact();" data-aos="zoom-in" data-aos-anchor="#home">Install App <i class="fa fa-download"></i></a>
+				<!--a id="btn_font" class="" onclick="playContact();" data-aos="zoom-in" data-aos-anchor="#home">Font Size <i class="fa fa-pencil"></i></a-->
+				<a id="btn_soundoff" class="hide" onclick="toggleSound();" data-aos="zoom-in" data-aos-anchor="#home">Sound Off <i class="fa fa-volume-off"></i></a>
+				<a id="btn_soundon" class="" onclick="toggleSound();" data-aos="zoom-in" data-aos-anchor="#home">Sound On <i class="fa fa-volume-up"></i></a>
+
+			</div>
+  			<div id="footerBtns" class="grad2">
+  				<div>
+  					<a href="https://www.ttmenus.com/quties" onclick="playContact();" target="_blank" ><i class="fa fa-home"></i></a> | <a onclick="toggleFooterAdSpot1();"><i class="fa fa-film"></i></a> | <a onclick="toggleFooterAdSpot2();"><i class="fa fa-cab"></i></a> | <a onclick="toggleFooterAccessibility();"><i class="fa fa-wheelchair-alt"></i></a>
+  				</div>
+  			</div>
+		</div>
+		<!-- END FOOTER SECTION -->
+
+		<script src="src/app.js"></script>
+		<script src="src/script.js"></script>
+
+		<!-- AOS -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+    			AOS.init();
+			};
+			
+		</script>
+	
+	</body>
+
+</html>
