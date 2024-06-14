@@ -154,7 +154,7 @@ td, th {
 		margin-top: 4.3em;
     width: 100%;
     overflow: hidden;
-    background-color: var(--hero-bg-color);
+    background: url("images/bg.webp");
 }
 .install{
 		margin: 0 auto;
